@@ -1,0 +1,51 @@
+.create-product-area {
+   padding: 20px;
+   width: 100%;
+   h3 {
+      font-size: 22px;
+      font-weight: 500;
+      color: #9B9A99;
+   }
+   .widget {
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+      border-radius: 5px;
+      box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+      label {
+         font-size: 16px;
+         color: #212529;
+         font-weight: 500;
+         font-family: 'Nunito', sans-serif;
+         margin-bottom: 10px;
+      }
+      input, textarea {
+         font-size: 16px;
+         color: #212529;
+         font-weight: 500;
+         font-family: 'Nunito', sans-serif;
+         border: 1px solid #ebebeb;
+         height: 40px;
+         padding: 10px;
+         outline: #f6ab4b;
+      }
+   }
+   button {
+      padding: 19px 42px;
+      font-size: 16px;
+      font-weight: 700;
+      font-family: 'Nunito', sans-serif;
+      color: rgb(99, 166, 97);
+      border: 2px solid rgb(99, 166, 97);
+      border-radius: 50px;
+      background: white;
+      transition: all 300ms ease;
+      &:hover {
+         background: rgb(99, 166, 97);
+         color: #fff;
+      }
+      &:active {
+         transform: scale(0.9);
+      }
+   }
+}

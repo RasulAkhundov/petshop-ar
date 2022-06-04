@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+.contact-area {
+   padding-block: 115px;
+   background: #f9f9f9;
+   .contact-details-section {
+      .contact-info-wrapper {
+         padding: 40px 15px 30px;
+         text-align: center;
+         background: #fff;
+         bordeR: 1px solid #eaeaea;
+         &:hover i {
+            background: #F6AB4B;
+            color: #fff !important;
+         }
+         .info-icon {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            i {
+               font-size: 30px;
+               color: #F6AB4B;
+               width: 60px;
+               height: 60px;
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               border: 2px solid #F6AB4B;
+               border-radius: 50%;
+               transition: all 300ms ease;
+            }
+         }
+         h4 {
+            font-size: 18px;
+            color: #424243;
+            font-weight: 700;
+            font-family: 'Nunito', sans-serif;
+            margin-bottom: 10px;
+         }
+         p {
+            font-size: 15px;
+            font-family: 'Nunito', sans-serif;
+            color: #666666;
+            margin-bottom: 3px;
+         }
+      }
+   }
+
+   .contact-form {
+      .contact-message-wrapper {
+         h4 {
+            font-size: 20px;
+            font-family: 'Nunito', sans-serif;
+            font-weight: 700;
+            color: #333333;
+            margin-bottom: 20px;
+         }
+         .contact-message {
+            input {
+               width: 100%;
+               padding: 8px 10px 8px 20px;
+               font-size: 14px;
+               color: #454545;
+               background: #fff;
+               border: 1px solid #eaeaea;
+               height: 45px;
+               outline: none;
+            }
+            textarea {
+               width: 100%;
+               min-height: 100px;
+               padding: 20px;
+               font-size: 14px;
+               color: #454545;
+               background: #fff;
+               border:  1px solid #eaeaea;
+               outline: none;
+            }
+            button {
+               padding: 19px 42px;
+               font-size: 14px;
+               color: #fff;
+               font-weight: 700;
+               background: #F6AB4B;
+               border-radius: 50px;
+               outline: none;
+               bordeR: 0;
+               line-height: 1;
+               font-family: 'Monstserrat', sans-serif;
+               transition: all 300ms ease;
+               &:hover {
+                  background: #000;
+               }
+            }
+         }
+      }
+   }
+}

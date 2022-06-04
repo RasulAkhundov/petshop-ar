@@ -1,0 +1,201 @@
+.shop-area {
+   padding-block: 115px;
+
+   .product-details-img {
+      .product-main-image {
+         width: 100%;
+         border: 1px solid #ddd;
+      }
+
+      img {
+         width: 100%;
+         cursor: pointer;
+      }
+   }
+
+   .product-details-content {
+      .content-name {
+         font-size: 20px;
+         color: #585858;
+         font-weight: 600;
+         margin-bottom: 7px;
+         font-family: 'Nunito', sans-serif;
+      }
+
+      .product-rating {
+         display: flex;
+         margin: 12px 0 18px 0;
+
+         i {
+            font-size: 14px;
+            margin-right: 5px;
+         }
+
+         span {
+            font-size: 14px;
+            color: #333333;
+            font-family: 'Nunito', sans-serif;
+         }
+      }
+
+      .product_price {
+         display: flex;
+
+         span {
+            font-size: 18px;
+            color: #535352;
+         }
+
+         .new {
+            font-weight: 600;
+            margin-right: 20px;
+            position: relative;
+         }
+
+         .new:after {
+            content: '';
+            position: absolute;
+            right: -15px;
+            top: 50%;
+            transform: translateY(-55%);
+            width: 7px;
+            height: 0.2px;
+            background: #000101;
+         }
+
+         .old {
+            text-decoration: line-through;
+         }
+      }
+
+      .in-stock {
+         font-size: 15px;
+         color: #93c241;
+         letter-spacing: .2;
+         font-family: 'Nunito', sans-serif;
+         margin: 35px 0 0 0;
+         padding: 0 0 35px 0;
+         border-bottom: 1px solid #e4e4e4;
+      }
+
+      .content-description {
+         padding: 35px 0 15px 0;
+         margin: 0;
+      }
+
+      .product-details-style {
+
+         .selector-wrapper {
+            margin-block: 20px;
+
+            label {
+               font-size: 16px;
+               color: #1d1d1d;
+               font-weight: 600;
+               text-transform: capitalize;
+               width: 60px;
+               margin-right: 28px;
+            }
+
+            select {
+               width: 200px;
+               text-align: left;
+               padding: 0 10px;
+               font-size: 14px;
+               font-weight: 400;
+               color: #888;
+               border: 1px solid #ededed;
+               height: 40px;
+               box-shadow: none;
+               outline: none;
+               background: #f9f9f9;
+            }
+
+            input {
+               height: 40px;
+               width: 100px;
+               font-size: 14px;
+               font-weight: 400;
+               color: #888;
+               border: 1px solid #ededed;
+               box-shadow: none;
+               outline: none;
+               background: #f9f9f9;
+               padding: 0 10px;
+            }
+         }
+      }
+
+      .product-details-footer {
+         display: flex;
+         button {
+            padding: 18px 22px;
+            font-size: 13px;
+            font-weight: 500;
+            font-family: 'Nunito', sans-serif;
+            color: #fff;
+            background: #fbab4b;
+            border: 0;
+            transition: 300ms all ease;
+            margin-right: 20px;
+
+            &:hover {
+               background: #000001;
+               color: white;
+            }
+         }
+
+         i {
+            height: 55.5px;
+            width: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+            transition: all 300ms ease;
+            border: 1px solid #ededed;
+            cursor: pointer;
+
+            &:hover {
+               background: #fbab4b;
+               color: #fff;
+            }
+         }
+      }
+   }
+
+   .swiper {
+      .swiper-button-prev {
+         position: absolute;
+         top: 50%;
+         left: 0;
+      }
+
+      .swiper-button-next {
+         position: absolute;
+         top: 50%;
+         right: 0;
+      }
+
+      .swiper-button-prev,
+      .swiper-button-next {
+         width: 35px;
+         height: 35px;
+         border-radius: 50px;
+         background: white;
+         display: none;
+         transition: all 300ms ease;
+      }
+
+      .swiper-button-prev:after,
+      .swiper-button-next:after {
+         color: #000101;
+         font-size: 16px !important;
+      }
+   }
+}
+
+.product-details-img:hover .swiper .swiper-button-next,
+.product-details-img:hover .swiper .swiper-button-prev {
+   display: flex;
+}

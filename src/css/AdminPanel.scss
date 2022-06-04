@@ -1,0 +1,118 @@
+.error-modal {
+   display: none;
+   position: absolute;
+   top: 100px;
+   left: 50%;
+   transform: translateX(-50%);
+   padding: 15px 20px;
+   background: #FECDCE;
+   color: #A72237;
+   font-size: 16px;
+   font-weight: 500;
+   font-family: 'Nunito', sans-serif;
+   box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+   border-radius: 5px;
+}
+.sucsess-modal {
+   display: none;
+   position: absolute;
+   top: 100px;
+   left: 50%;
+   transform: translateX(-50%);
+   padding: 15px 20px;
+   font-size: 16px;
+   font-weight: 500;
+   font-family: 'Nunito', sans-serif;
+   box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+   border-radius: 5px;
+   color: rgb(99, 166, 97);
+   background: rgb(195, 234, 194);
+}
+.admin-area {
+   display: flex;
+   aside {
+      min-width: 300px;
+      display: flex;
+      flex-direction: column;
+      padding: 30px 20px 30px 30px;
+      background: #fff;
+      box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+      border: 1px solid #ebebeb;
+      .user-info-content {
+         display: flex;
+         align-items: center;
+         border-bottom: 1px solid #ebebeb;
+         padding-bottom: 20px;
+         img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50px;
+         }
+         h4 {
+            font-size: 18px;
+            color: #333333;
+            font-weight: 700;
+            font-family: 'Nunito', sans-serif;
+            margin: 0 20px 0 10px;
+         }
+         i {
+            color: #383838;
+            font-size: 22px;
+            cursor: pointer;
+            transition: all 300ms ease;
+            &:hover {
+               color: #f6ab4b;
+            }
+         }
+      }
+      .content-widget {
+         border-bottom: 1px solid #ebebeb;
+         padding-block: 20px;
+         h4 {
+            font-size: 18px;
+            color: #333333;
+            font-family: 'Nunit5o', sans-serif;
+            font-weight: 700;
+            margin-bottom: 15px;
+         }
+         ul {
+            padding: 0;
+            margin: 0;
+            li {
+               list-style: none;
+               cursor: pointer;
+               margin-bottom: 10px;
+               i {
+                  margin-right: 5px;
+                  transition: all 300ms ease;
+               }
+               &:hover {
+                  color: #f6ab4b;
+                  i {
+                     margin-right: 10px;
+                  }
+               }
+               &:active {
+                  color: #f6ab4b;
+                  i {
+                     margin-right: 10px;
+                  }
+               }
+            }
+         }
+      }
+   }
+}
+.widget-active {
+   color: #f6ab4b;
+   display: flex !important;
+   align-items: center;
+   i {
+      margin-right: 10px !important;
+   }
+}
+@media screen and (max-width: 700px) {
+   .admin-area {
+      flex-direction: column;
+   }
+}
