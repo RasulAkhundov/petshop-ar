@@ -81,7 +81,7 @@ function App() {
           <Route path='/blogs/news' element={<BlogNews user={user} />} />
           <Route path='/pages/about-us' element={<AboutUs user={user} />} />
           <Route path='/pages/contact' element={<Contact user={user} />} />
-          <Route path={`/products/:id`} element={<SingleProducts products={products}/>} />
+          <Route path={`/products/:id`} element={<SingleProducts products={products} user={user}/>} />
           <Route path='/pages/admin' element={<Admin user={user} allUsers={allUsers} products={products} />} />
           <Route path='/404' element={<NotFound />} />
           <Route
